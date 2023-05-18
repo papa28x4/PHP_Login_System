@@ -3,7 +3,7 @@
     $msgClass = 'red';
     if(isset($_POST['submit'])){
         $msg = '';
-        include_once 'dbconnect.php';
+        require_once 'dbconnect.php';
         $username = mysqli_real_escape_string($conn, $_POST['name']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $password = mysqli_real_escape_string($conn, $_POST['pwd']);
